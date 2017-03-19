@@ -2,14 +2,84 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Volunteer Form</title>
+  <title>Volunteer Sign-up</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700" rel="stylesheet">
 </head>
 <body>
 
+  <header>
+    <h1>Apply to be a tree planter</h1>
+    <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+  </header>
+
+  <fieldset>
+
+    <legend>Personal details</legend>
+
+    <div class="grid">
+      <div class="unit">
+        <label for="name">Full name</label>
+        <input type="name" name="name">
+        <label for="name" class="italic">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</label>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="unit">
+        <label for="nickname">What should we call you?</label>
+        <input type="text" name="nickname">
+        <label for="nickname" class="italic">What all your friends call you, e.g. “Liz”.</label>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="unit">
+        <label for="date">Date of birth</label>
+        <input type="date" name="date">
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="unit">
+        <label for="size">T-shirt size</label>
+        <select class="size" name="size">
+          <option>Select a t-shirt size</option>
+          <option>Fitted: XS</option>
+          <option>Fitted: S</option>
+          <option>Fitted: M</option>
+          <option>Fitted: L</option>
+          <option>Fitted: XL</option>
+          <option>Straight-cut: XS</option>
+          <option>Straight-cut: S</option>
+          <option>Straight-cut: M</option>
+          <option>Straight-cut: L</option>
+          <option>Straight-cut: XL</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="unit">
+        <label for="email">Email</label>
+        <input type="email" name="email">
+      </div>
+    </div>
+
+      <div class="grid">
+        <div class="unit">
+          <label for="number">Phone number<span class="opt">(optional)</span></label>
+          <input type="number" name="number">
+        </div>
+      </div>
+
+      <hr>
+
+
+  </fieldset>
 </body>
 </html>
