@@ -70,14 +70,61 @@
       </div>
     </div>
 
-      <div class="grid">
-        <div class="unit">
-          <label for="number">Phone number<span class="opt">(optional)</span></label>
-          <input type="number" name="number">
-        </div>
+    <div class="grid">
+      <div class="unit">
+        <label for="number">Phone number<span class="opt">(optional)</span></label>
+        <input type="number" name="number">
       </div>
+    </div>
 
-      <hr>
+    <hr>
+
+    <legend>Address</legend>
+
+    <div class="grid">
+      <div class="unit">
+        <label for="address">Street address</label>
+        <input type="text" name="address">
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="unit">
+        <label for="city">City</label>
+        <input type="text" name="city">
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="unit">
+        <label for="province">Select a province</label>
+        <select class="province" name="province">
+          <option>Select a province</option>
+          <option>Alberta</option>
+          <option>British Columbia</option>
+          <option>Manitoba</option>
+          <option>New Brunswick</option>
+          <option>Newfoundland & Labrador</option>
+          <option>Northwest Territories</option>
+          <option>Nova Scotia</option>
+          <option>Nunavut</option>
+          <option>Ontario</option>
+          <option>Prince Edward Island</option>
+          <option>Québec</option>
+          <option>Saskatchewan</option>
+          <option>Yukon</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="unit">
+        <label for="postal">Postal code</label>
+        <input type="text" minlength="6" id="postal-code">
+      </div>
+    </div>
+
+    <hr>
 
 
   </fieldset>
