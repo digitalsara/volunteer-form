@@ -11,6 +11,15 @@ input, select {
   border-color: #6e8c62;
 }
 
+div {
+  width: 100%;
+}
+
 .opt {
   color: #70ad55;
+}
+
+fieldset {
+  border-bottom: 2px solid #70ad55;
+  border-top: none;
 }
