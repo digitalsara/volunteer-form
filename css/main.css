@@ -1,5 +1,10 @@
-html{
+html {
   font-family: "Droid Serif", serif;
+  background-color: #70ad55;
+}
+
+form {
+  background-color: #fff;
 }
 
 header {
@@ -7,12 +12,18 @@ header {
   color: #fff;
 }
 
-input, select {
+input, select, textarea {
   border-color: #6e8c62;
 }
 
 div {
   width: 100%;
+}
+
+.btn {
+  background-color: #6e8c62;
+  border: none;
+  padding: .5rem 3rem;
 }
 
 .opt {
@@ -22,4 +33,9 @@ div {
 fieldset {
   border-bottom: 2px solid #70ad55;
   border-top: none;
+}
+
+footer {
+  background-color: #70ad55;
+  color: #fff;
 }
