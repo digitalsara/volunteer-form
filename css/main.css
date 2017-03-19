@@ -1,0 +1,16 @@
+html{
+  font-family: "Droid Serif", serif;
+}
+
+header {
+  background-color: #70ad55;
+  color: #fff;
+}
+
+input, select {
+  border-color: #6e8c62;
+}
+
+.opt {
+  color: #70ad55;
+}
