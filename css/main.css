@@ -39,3 +39,7 @@ footer {
 .radio {
   border: none;
 }
+
+hr {
+  border-color: #70ad55;
+}
