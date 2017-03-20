@@ -19,7 +19,7 @@
 
 <form class="" action="index.html" method="POST">
 
-  <fieldset class="max-length">
+  <fieldset class="wrapper">
 
     <legend class="giga gutter-1-2 pad-t-2 pad-b-1-2">Personal details</legend>
 
@@ -31,62 +31,62 @@
       </div>
 
       <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-t-1-4">
-        <label for="nickname">What should we call you?</label>
+        <label for="name">What should we call you?</label>
         <input type="text" name="nickname">
-        <label for="nickname" class="italic micro">What all your friends call you, e.g. “Liz”.</label>
+        <label for="name" class="italic micro">What all your friends call you, e.g. “Liz”.</label>
       </div>
 
       <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-t-1-4">
         <label for="date">Date of birth</label>
-        <input type="date" name="date">
+        <input type="date" name="date" id="date">
       </div>
 
       <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-t-1-4">
-        <label for="size">T-shirt size</label>
+        <label for="name">T-shirt size</label>
         <select class="size" name="size">
-          <option>Select a t-shirt size</option>
-          <option>Fitted: XS</option>
-          <option>Fitted: S</option>
-          <option>Fitted: M</option>
-          <option>Fitted: L</option>
-          <option>Fitted: XL</option>
-          <option>Straight-cut: XS</option>
-          <option>Straight-cut: S</option>
-          <option>Straight-cut: M</option>
-          <option>Straight-cut: L</option>
-          <option>Straight-cut: XL</option>
+          <option value="">Select a t-shirt size</option>
+          <option value="">Fitted: XS</option>
+          <option value="">Fitted: S</option>
+          <option value="">Fitted: M</option>
+          <option value="">Fitted: L</option>
+          <option value="">Fitted: XL</option>
+          <option value="">Straight-cut: XS</option>
+          <option value="">Straight-cut: S</option>
+          <option value="">Straight-cut: M</option>
+          <option value="">Straight-cut: L</option>
+          <option value="">Straight-cut: XL</option>
         </select>
       </div>
 
       <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-t-1-4">
         <label for="email">Email</label>
-        <input type="email" name="email">
+        <input type="email" name="email" id="email">
       </div>
 
       <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-t-1-4">
         <label for="number">Phone number<span class="opt italic"> (optional)</span></label>
-        <input type="number" name="number">
+        <input type="tel" name="number" id="number">
       </div>
     </div>
   </fieldset>
 
-  <fieldset class="max-length">
-    <legend class="giga pad-bottom pad-top">Address</legend>
+  <fieldset class="wrapper pad-bottom">
+    <legend class="giga pad-bottom pad-top gutter-1-2">Address</legend>
 
     <div class="grid grid-middle">
       <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-t-1-4">
         <label for="address">Street address</label>
-        <input type="text" name="address">
+        <input type="text" name="address" id="address">
       </div>
 
       <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-t-1-2">
         <label for="city">City</label>
-        <input type="text" name="city">
+        <input type="text" name="city" id="city">
       </div>
 
       <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-top">
         <label for="province">Province</label>
-        <select id="province" list="province-list" required>
+        <select id="province">
           <option>Select a province</option>
           <option>Alberta</option>
           <option>British Columbia</option>
@@ -104,15 +104,15 @@
         </select>
       </div>
 
-      <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-bottom pad-t-1-2">
+      <div class="unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2 xl-1-2 pad-b-1-2 pad-t-1-2">
         <label for="postal">Postal code</label>
-        <input type="text" minlength="6" id="postal-code">
+        <input type="text" minlength="6" id="postal">
       </div>
     </div>
   </fieldset>
 
-  <fieldset class="max-length gutter-1-2">
-    <legend class="giga pad-top-half pad-b-1-2">What activities are you interested in helping with?</legend>
+  <fieldset class="wrapper gutter-1-2 radio">
+    <legend class="giga pad-top pad-b-1-2">What activities are you interested in helping with?</legend>
 
     <div class="grid grid-middle">
       <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 push-0">
@@ -161,8 +161,8 @@
       </div>
     </fieldset>
 
-    <fieldset class="max-length gutter-1-2">
-      <legend class="giga pad-t-2 pad-b-1-2">Do you have any experience with the following?</legend>
+    <fieldset class="wrapper gutter-1-2">
+      <legend class="giga pad-top pad-b-1-2">Do you have any experience with the following?</legend>
       <div class="grid grid-stretch">
         <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
           <div class="push-1-4">
@@ -220,25 +220,28 @@
       </div>
     </fieldset>
 
-    <fieldset class="max-length">
+    <fieldset class="wrapper radio gutter-1-2 push-0">
+      <legend class="giga pad-top pad-b-1-2">Do you have a valid driver’s license?</legend>
       <div class="unit pad-bottom">
-        <legend class="giga pad-top pad-b-1-2">Do you have a valid driver’s license?</legend>
         <input type="radio" id="drive-y" name="check">
         <label for="drive-y">Yes</label>
         <input type="radio" id="drive-n" name="check">
         <label for="drive-n">No</label>
       </div>
+  </fieldset>
 
+  <fieldset class="wrapper radio gutter-1-2 push-0">
+    <legend class="giga pad-top pad-b-1-2">Do you have a pick-up truck you’d be willing to use?</legend>
       <div class="unit pad-bottom">
-        <legend class="giga pad-top pad-b-1-2">Do you have a pick-up truck you’d be willing to use?</legend>
         <input type="radio" id="truck-y" name="check-2">
         <label for="truck-y">Yes</label>
         <input type="radio" id="truck-n" name="check-2">
         <label for="truck-n">No</label>
       </div>
-
+  </fieldset>
+  <fieldset class="wrapper gutter-1-2 push-0">
+    <legend class="giga pad-top pad-b-1-2">Do you have up-to-date first-aid certification?</legend>
       <div class="unit pad-b-2">
-        <legend class="giga pad-top pad-b-1-2">Do you have up-to-date first-aid certification?</legend>
         <input type="radio" id="aid-y" name="check-3">
         <label for="aid-y">Yes</label>
         <input type="radio" id="aid-n" name="check-3">
@@ -246,9 +249,9 @@
       </div>
   </fieldset>
 
-  <fieldset class="max-length gutter-1-2 pad-b-2">
+  <fieldset class="wrapper gutter-1-2 pad-b-2">
+    <legend class="giga pad-top pad-b-1-2">Please let us know any comments or questions you may have.</legend>
       <div class="unit">
-        <legend class="giga pad-top pad-b-1-2">Please let us know any comments or questions you may have.</legend>
         <textarea id="questions" name="name" rows="8" cols="80"></textarea>
       </div>
   </fieldset>
@@ -256,10 +259,7 @@
     <div class="text-center pad-b-2 pad-top tera">
       <button class="btn" type="submit">Apply</button>
     </div>
-
-
 </form>
-
 <footer class="gutter pad-t-2 pad-b-1-2">
   <p>© Tree Hugger International Organization</p>
 </footer>
